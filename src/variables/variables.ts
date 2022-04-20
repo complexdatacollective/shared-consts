@@ -149,7 +149,11 @@ const location: VariableDefinition = {
   hasOptions: false,
 };
 
-export const VARIABLE_TYPES = {
+type VariableTypeDefinition = {
+  [key: string]: VariableDefinition,
+};
+
+export const VARIABLE_TYPES: VariableTypeDefinition = {
   number,
   text,
   boolean,
@@ -161,14 +165,14 @@ export const VARIABLE_TYPES = {
   location,
 };
 
-export const isOrdinalOrCategoricalType = (
-  variableType,
-) => VARIABLE_TYPES[variableType].variableGroups.includes(VARIABLE_GROUPS.ORDINAL) || VARIABLE_TYPES[variableType].variableGroups.includes(VARIABLE_GROUPS.CATEGORICAL);
+export const isOrdinalOrCategoricalType = (variableType: string) =>
+  VARIABLE_TYPES[variableType].variableGroups.includes(VARIABLE_GROUPS.ORDINAL)
+  || VARIABLE_TYPES[variableType].variableGroups.includes(VARIABLE_GROUPS.CATEGORICAL);
 
-export const getComponentsForType = (variableType) => {
+export const getComponentsForType = (variableType: string) => {
   return VARIABLE_TYPES[variableType].inputControls;
 };
 
-export const getVariableTypeColor = (variableType) => VARIABLE_TYPES[variableType].color;
+export const getVariableTypeColor = (variableType: string) => VARIABLE_TYPES[variableType].color;
 
 export default VARIABLE_TYPES;
