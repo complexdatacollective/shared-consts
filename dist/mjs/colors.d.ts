@@ -1,4 +1,4 @@
-export declare enum COLORS {
+export declare enum Color {
     CHARCOAL = "var(--color-charcoal)",
     CERULEAN_BLUE = "var(--color-cerulean-blue)",
     PARADISE_PINK = "var(--color-paradise-pink)",

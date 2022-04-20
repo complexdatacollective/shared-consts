@@ -1,107 +1,107 @@
 // Docs: https://github.com/codaco/Network-Canvas/wiki/Variable-Types
-import { COLORS } from "../colors";
+import { Color } from "../colors";
 import { BooleanChoice, CheckboxGroup, DatePicker, LikertScale, NumberInput, RadioGroup, RelativeDatePicker, TextArea, TextInput, Toggle, ToggleButtonGroup, VisualAnalogScale, } from "./controls";
-var VARIABLE_GROUPS;
-(function (VARIABLE_GROUPS) {
-    VARIABLE_GROUPS["NUMBER"] = "number";
-    VARIABLE_GROUPS["TEXT"] = "text";
-    VARIABLE_GROUPS["BOOLEAN"] = "boolean";
-    VARIABLE_GROUPS["DATE"] = "date";
-    VARIABLE_GROUPS["SCALAR"] = "scalar";
-    VARIABLE_GROUPS["ORDINAL"] = "ordinal";
-    VARIABLE_GROUPS["CATEGORICAL"] = "categorical";
-})(VARIABLE_GROUPS || (VARIABLE_GROUPS = {}));
+var VariableGroup;
+(function (VariableGroup) {
+    VariableGroup["Number"] = "number";
+    VariableGroup["Text"] = "text";
+    VariableGroup["Boolean"] = "boolean";
+    VariableGroup["Date"] = "date";
+    VariableGroup["Scalar"] = "scalar";
+    VariableGroup["Ordinal"] = "ordinal";
+    VariableGroup["Categorical"] = "categorical";
+})(VariableGroup || (VariableGroup = {}));
 export const number = {
     label: 'Number',
-    color: COLORS.PARADISE_PINK,
+    color: Color.PARADISE_PINK,
     inputControls: [NumberInput],
     variableGroups: [
-        VARIABLE_GROUPS.NUMBER,
+        VariableGroup.Number,
     ],
     hasParameters: false,
     hasOptions: false,
 };
 export const text = {
     label: 'Text',
-    color: COLORS.CERULEAN_BLUE,
+    color: Color.CERULEAN_BLUE,
     inputControls: [
         TextInput,
         TextArea
     ],
     variableGroups: [
-        VARIABLE_GROUPS.TEXT,
+        VariableGroup.Text,
     ],
     hasParameters: false,
     hasOptions: false,
 };
 export const boolean = {
     label: 'Boolean',
-    color: COLORS.NEON_CARROT,
+    color: Color.NEON_CARROT,
     inputControls: [
         BooleanChoice,
         Toggle,
     ],
     variableGroups: [
-        VARIABLE_GROUPS.BOOLEAN,
+        VariableGroup.Boolean,
     ],
     hasParameters: false,
     hasOptions: false,
 };
 export const ordinal = {
     label: 'Ordinal',
-    color: COLORS.SEA_GREEN,
+    color: Color.SEA_GREEN,
     inputControls: [
         RadioGroup,
         LikertScale,
     ],
     variableGroups: [
-        VARIABLE_GROUPS.ORDINAL,
+        VariableGroup.Ordinal,
     ],
     hasParameters: false,
     hasOptions: true,
 };
 export const categorical = {
     label: 'Categorical',
-    color: COLORS.MUSTARD,
+    color: Color.MUSTARD,
     inputControls: [
         CheckboxGroup,
         ToggleButtonGroup,
         RadioGroup,
     ],
     variableGroups: [
-        VARIABLE_GROUPS.CATEGORICAL,
+        VariableGroup.Categorical,
     ],
     hasParameters: false,
     hasOptions: true,
 };
 export const scalar = {
     label: 'Scalar',
-    color: COLORS.KIWI,
+    color: Color.KIWI,
     inputControls: [
         VisualAnalogScale,
     ],
     variableGroups: [
-        VARIABLE_GROUPS.SCALAR,
+        VariableGroup.Scalar,
     ],
     hasParameters: true,
     hasOptions: false,
 };
 const datetime = {
     label: 'Date',
-    color: COLORS.TOMATO,
+    color: Color.TOMATO,
     inputControls: [
         DatePicker,
         RelativeDatePicker,
     ],
     variableGroups: [
-        VARIABLE_GROUPS.DATE,
+        VariableGroup.Date,
     ],
     hasParameters: true,
     hasOptions: false,
 };
 const layout = {
     label: 'Layout',
-    color: COLORS.PURPLE_PIZAZZ,
+    color: Color.PURPLE_PIZAZZ,
     inputControls: [],
     variableGroups: [],
     hasParameters: false,
@@ -109,7 +109,7 @@ const layout = {
 };
 const location = {
     label: 'Location',
-    color: COLORS.SLATE_BLUE_DARK,
+    color: Color.SLATE_BLUE_DARK,
     inputControls: [],
     variableGroups: [],
     hasParameters: false,
@@ -126,8 +126,8 @@ export const VARIABLE_TYPES = {
     layout,
     location,
 };
-export const isOrdinalOrCategoricalType = (variableType) => VARIABLE_TYPES[variableType].variableGroups.includes(VARIABLE_GROUPS.ORDINAL)
-    || VARIABLE_TYPES[variableType].variableGroups.includes(VARIABLE_GROUPS.CATEGORICAL);
+export const isOrdinalOrCategoricalType = (variableType) => VARIABLE_TYPES[variableType].variableGroups.includes(VariableGroup.Ordinal)
+    || VARIABLE_TYPES[variableType].variableGroups.includes(VariableGroup.Categorical);
 export const getComponentsForType = (variableType) => {
     return VARIABLE_TYPES[variableType].inputControls;
 };

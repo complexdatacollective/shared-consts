@@ -1,18 +1,19 @@
+import { Color } from "../colors";
 import { InputControlDefinition } from "./controls";
-declare enum VARIABLE_GROUPS {
-    NUMBER = "number",
-    TEXT = "text",
-    BOOLEAN = "boolean",
-    DATE = "date",
-    SCALAR = "scalar",
-    ORDINAL = "ordinal",
-    CATEGORICAL = "categorical"
+declare enum VariableGroup {
+    Number = "number",
+    Text = "text",
+    Boolean = "boolean",
+    Date = "date",
+    Scalar = "scalar",
+    Ordinal = "ordinal",
+    Categorical = "categorical"
 }
 export declare type VariableDefinition = {
     label: string;
-    color: string;
+    color: Color;
     inputControls: Array<InputControlDefinition>;
-    variableGroups: Array<VARIABLE_GROUPS>;
+    variableGroups: Array<VariableGroup>;
     hasParameters: boolean;
     hasOptions: boolean;
 };
@@ -28,5 +29,5 @@ declare type VariableTypeDefinition = {
 export declare const VARIABLE_TYPES: VariableTypeDefinition;
 export declare const isOrdinalOrCategoricalType: (variableType: string) => boolean;
 export declare const getComponentsForType: (variableType: string) => InputControlDefinition[];
-export declare const getVariableTypeColor: (variableType: string) => string;
+export declare const getVariableTypeColor: (variableType: string) => Color;
 export default VARIABLE_TYPES;

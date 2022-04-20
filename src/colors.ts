@@ -1,4 +1,4 @@
-export enum COLORS {
+export enum Color {
   CHARCOAL = 'var(--color-charcoal)',
   CERULEAN_BLUE = 'var(--color-cerulean-blue)',
   PARADISE_PINK = 'var(--color-paradise-pink)',
