@@ -1,24 +1,60 @@
 {
   "name": "@codaco/shared-consts",
-  "version": "1.0.1",
-  "description": "Shared constants for the Network Canvas project",
-  "main": "dist/cjs/index.js",
-  "module": "dist/mjs/index.js",
+  "version": "2.0.0",
+  "description": "test lib",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/mjs/index.js",
-      "require": "./dist/cjs/index.js"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
-  "repository": "https://github.com/complexdatacollective/shared-consts.git",
-  "author": "Joshua Melville <joshua.melville@northwestern.edu>",
-  "license": "MIT",
   "scripts": {
-    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup"
+    "test": "xv dist",
+    "lint": "xo",
+    "start": "esno src/index.ts",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "prepare": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codaco/shared-consts.git"
+  },
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": "codaco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codaco/shared-consts/issues"
+  },
+  "homepage": "https://github.com/codaco/shared-consts#readme",
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.24",
-    "typescript": "^4.6.3"
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^16.11.11",
+    "esno": "^0.12.1",
+    "husky": "^7.0.4",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.2",
+    "xo": "0.46.4",
+    "xv": "^1.0.2"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.test.*.map",
+    "!dist/**/*.test.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }

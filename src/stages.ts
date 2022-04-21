@@ -1,0 +1,17 @@
+export enum StageTypes {
+  NameGenerator = 'NameGenerator',
+  NameGeneratorQuickAdd = 'NameGeneratorQuickAdd',
+  NameGeneratorRoster = 'NameGeneratorRoster',
+  NameGeneratorList = 'NameGeneratorList',
+  NameGeneratorAutoComplete = 'NameGeneratorAutoComplete',
+  Sociogram = 'Sociogram',
+  Information = 'Information',
+  OrdinalBin = 'OrdinalBin',
+  CategoricalBin = 'CategoricalBin',
+  Narrative = 'Narrative',
+  AlterForm = 'AlterForm',
+  EgoForm = 'EgoForm',
+  AlterEdgeForm = 'AlterEdgeForm',
+  DyadCensus = 'DyadCensus',
+  TieStrengthCensus = 'TieStrengthCensus',
+}
