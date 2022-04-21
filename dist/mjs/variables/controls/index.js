@@ -70,17 +70,3 @@ export const BooleanChoice = {
     description: 'A component for boolean variables that requires the participant to actively select an option. Unlike the toggle component, this component accepts the "required" validation.',
     // image: BooleanChoiceImage,
 };
-export default {
-    TextInput,
-    TextArea,
-    NumberInput,
-    CheckboxGroup,
-    Toggle,
-    RadioGroup,
-    ToggleButtonGroup,
-    LikertScale,
-    VisualAnalogScale,
-    DatePicker,
-    RelativeDatePicker,
-    BooleanChoice,
-};

@@ -1,13 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.edgeTargetProperty = exports.edgeSourceProperty = exports.entityAttributesProperty = exports.entityPrimaryKeyProperty = void 0;
 // Model properties
-const entityPrimaryKeyProperty = '_uid';
-const entityAttributesProperty = 'attributes';
-const edgeSourceProperty = 'from';
-const edgeTargetProperty = 'to';
-exports.default = {
-    entityPrimaryKeyProperty,
-    entityAttributesProperty,
-    edgeSourceProperty,
-    edgeTargetProperty,
-};
+exports.entityPrimaryKeyProperty = '_uid';
+exports.entityAttributesProperty = 'attributes';
+exports.edgeSourceProperty = 'from';
+exports.edgeTargetProperty = 'to';

@@ -11,7 +11,3 @@ exports.AssetType = Object.freeze({
     video: 'video',
     audio: 'audio',
 });
-exports.default = {
-    InformationContentType: exports.InformationContentType,
-    AssetType: exports.AssetType,
-};

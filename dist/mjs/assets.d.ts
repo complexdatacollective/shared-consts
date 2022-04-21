@@ -7,8 +7,3 @@ export const AssetType: Readonly<{
     video: string;
     audio: string;
 }>;
-declare namespace _default {
-    export { InformationContentType };
-    export { AssetType };
-}
-export default _default;

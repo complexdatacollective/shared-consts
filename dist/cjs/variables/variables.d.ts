@@ -30,4 +30,4 @@ export declare const VARIABLE_TYPES: VariableTypeDefinition;
 export declare const isOrdinalOrCategoricalType: (variableType: string) => boolean;
 export declare const getComponentsForType: (variableType: string) => InputControlDefinition[];
 export declare const getVariableTypeColor: (variableType: string) => Color;
-export default VARIABLE_TYPES;
+export {};

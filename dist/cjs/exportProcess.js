@@ -1,25 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ncTargetUUID = exports.ncSourceUUID = exports.ncUUIDProperty = exports.ncSessionProperty = exports.ncCaseProperty = exports.ncProtocolNameProperty = exports.ncTypeProperty = exports.egoProperty = exports.edgeExportIDProperty = exports.nodeExportIDProperty = void 0;
 // Export properties
-const nodeExportIDProperty = 'nodeID';
-const edgeExportIDProperty = 'edgeID';
-const egoProperty = 'networkCanvasEgoUUID';
-const ncTypeProperty = 'networkCanvasType';
-const ncProtocolNameProperty = 'networkCanvasProtocolName';
-const ncCaseProperty = 'networkCanvasCaseID';
-const ncSessionProperty = 'networkCanvasSessionID';
-const ncUUIDProperty = 'networkCanvasUUID';
-const ncSourceUUID = 'networkCanvasSourceUUID';
-const ncTargetUUID = 'networkCanvasTargetUUID';
-exports.default = {
-    nodeExportIDProperty,
-    edgeExportIDProperty,
-    egoProperty,
-    ncTypeProperty,
-    ncProtocolNameProperty,
-    ncCaseProperty,
-    ncSessionProperty,
-    ncUUIDProperty,
-    ncSourceUUID,
-    ncTargetUUID,
-};
+exports.nodeExportIDProperty = 'nodeID';
+exports.edgeExportIDProperty = 'edgeID';
+exports.egoProperty = 'networkCanvasEgoUUID';
+exports.ncTypeProperty = 'networkCanvasType';
+exports.ncProtocolNameProperty = 'networkCanvasProtocolName';
+exports.ncCaseProperty = 'networkCanvasCaseID';
+exports.ncSessionProperty = 'networkCanvasSessionID';
+exports.ncUUIDProperty = 'networkCanvasUUID';
+exports.ncSourceUUID = 'networkCanvasSourceUUID';
+exports.ncTargetUUID = 'networkCanvasTargetUUID';

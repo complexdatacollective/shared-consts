@@ -1,4 +1,16 @@
 declare var _default: {
+    number: variables.VariableDefinition;
+    text: variables.VariableDefinition;
+    boolean: variables.VariableDefinition;
+    ordinal: variables.VariableDefinition;
+    categorical: variables.VariableDefinition;
+    scalar: variables.VariableDefinition;
+    VARIABLE_TYPES: {
+        [key: string]: variables.VariableDefinition;
+    };
+    isOrdinalOrCategoricalType: (variableType: string) => boolean;
+    getComponentsForType: (variableType: string) => import("./variables/controls").InputControlDefinition[];
+    getVariableTypeColor: (variableType: string) => import("./colors").Color;
     StageTypes: Readonly<{
         NameGenerator: string;
         NameGeneratorQuickAdd: string;
@@ -16,32 +28,32 @@ declare var _default: {
         DyadCensus: string;
         TieStrengthCensus: string;
     }>;
-    caseProperty: string;
-    sessionProperty: string;
-    protocolProperty: string;
-    protocolName: string;
-    sessionStartTimeProperty: string;
-    sessionFinishTimeProperty: string;
-    sessionExportTimeProperty: string;
-    codebookHashProperty: string;
+    caseProperty: "caseId";
+    sessionProperty: "sessionId";
+    protocolProperty: "protocolUID";
+    protocolName: "protocolName";
+    sessionStartTimeProperty: "sessionStart";
+    sessionFinishTimeProperty: "sessionFinish";
+    sessionExportTimeProperty: "sessionExported";
+    codebookHashProperty: "codebookHash";
     EntityTypes: Readonly<{
         edge: string;
         node: string;
     }>;
-    entityPrimaryKeyProperty: string;
-    entityAttributesProperty: string;
-    edgeSourceProperty: string;
-    edgeTargetProperty: string;
-    nodeExportIDProperty: string;
-    edgeExportIDProperty: string;
-    egoProperty: string;
-    ncTypeProperty: string;
-    ncProtocolNameProperty: string;
-    ncCaseProperty: string;
-    ncSessionProperty: string;
-    ncUUIDProperty: string;
-    ncSourceUUID: string;
-    ncTargetUUID: string;
+    nodeExportIDProperty: "nodeID";
+    edgeExportIDProperty: "edgeID";
+    egoProperty: "networkCanvasEgoUUID";
+    ncTypeProperty: "networkCanvasType";
+    ncProtocolNameProperty: "networkCanvasProtocolName";
+    ncCaseProperty: "networkCanvasCaseID";
+    ncSessionProperty: "networkCanvasSessionID";
+    ncUUIDProperty: "networkCanvasUUID";
+    ncSourceUUID: "networkCanvasSourceUUID";
+    ncTargetUUID: "networkCanvasTargetUUID";
+    entityPrimaryKeyProperty: "_uid";
+    entityAttributesProperty: "attributes";
+    edgeSourceProperty: "from";
+    edgeTargetProperty: "to";
     InformationContentType: Readonly<{
         text: string;
         asset: string;
@@ -53,3 +65,4 @@ declare var _default: {
     }>;
 };
 export default _default;
+import * as variables from "./variables/variables";

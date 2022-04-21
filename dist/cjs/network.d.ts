@@ -1,11 +1,4 @@
-declare namespace _default {
-    export { entityPrimaryKeyProperty };
-    export { entityAttributesProperty };
-    export { edgeSourceProperty };
-    export { edgeTargetProperty };
-}
-export default _default;
-declare const entityPrimaryKeyProperty: "_uid";
-declare const entityAttributesProperty: "attributes";
-declare const edgeSourceProperty: "from";
-declare const edgeTargetProperty: "to";
+export const entityPrimaryKeyProperty: "_uid";
+export const entityAttributesProperty: "attributes";
+export const edgeSourceProperty: "from";
+export const edgeTargetProperty: "to";

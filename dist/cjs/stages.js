@@ -19,6 +19,3 @@ exports.StageTypes = Object.freeze({
     DyadCensus: 'DyadCensus',
     TieStrengthCensus: 'TieStrengthCensus',
 });
-exports.default = {
-    StageTypes: exports.StageTypes,
-};

@@ -1,19 +1,9 @@
 // Session variable properties
-const caseProperty = 'caseId';
-const sessionProperty = 'sessionId';
-const protocolProperty = 'protocolUID';
-const protocolName = 'protocolName';
-const sessionStartTimeProperty = 'sessionStart';
-const sessionFinishTimeProperty = 'sessionFinish';
-const sessionExportTimeProperty = 'sessionExported';
-const codebookHashProperty = 'codebookHash';
-export default {
-    caseProperty,
-    sessionProperty,
-    protocolProperty,
-    protocolName,
-    sessionStartTimeProperty,
-    sessionFinishTimeProperty,
-    sessionExportTimeProperty,
-    codebookHashProperty,
-};
+export const caseProperty = 'caseId';
+export const sessionProperty = 'sessionId';
+export const protocolProperty = 'protocolUID';
+export const protocolName = 'protocolName';
+export const sessionStartTimeProperty = 'sessionStart';
+export const sessionFinishTimeProperty = 'sessionFinish';
+export const sessionExportTimeProperty = 'sessionExported';
+export const codebookHashProperty = 'codebookHash';

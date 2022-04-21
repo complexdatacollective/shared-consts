@@ -15,7 +15,3 @@ export const StageTypes: Readonly<{
     DyadCensus: string;
     TieStrengthCensus: string;
 }>;
-declare namespace _default {
-    export { StageTypes };
-}
-export default _default;

@@ -8,7 +8,3 @@ export const AssetType = Object.freeze({
     video: 'video',
     audio: 'audio',
 });
-export default {
-    InformationContentType,
-    AssetType,
-};

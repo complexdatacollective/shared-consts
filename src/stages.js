@@ -16,7 +16,3 @@ export const StageTypes = Object.freeze({
   DyadCensus: 'DyadCensus',
   TieStrengthCensus: 'TieStrengthCensus',
 });
-
-export default {
-  StageTypes,
-}

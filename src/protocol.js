@@ -5,7 +5,3 @@ export const EntityTypes = Object.freeze({
 });
 
 // Todo: add TS definitions for entity types here, and ultimately the protocol json structure itself
-
-export default {
-  EntityTypes,
-};

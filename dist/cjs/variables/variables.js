@@ -138,4 +138,3 @@ const getComponentsForType = (variableType) => {
 exports.getComponentsForType = getComponentsForType;
 const getVariableTypeColor = (variableType) => exports.VARIABLE_TYPES[variableType].color;
 exports.getVariableTypeColor = getVariableTypeColor;
-exports.default = exports.VARIABLE_TYPES;

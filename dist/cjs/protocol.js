@@ -7,6 +7,3 @@ exports.EntityTypes = Object.freeze({
     node: 'node',
 });
 // Todo: add TS definitions for entity types here, and ultimately the protocol json structure itself
-exports.default = {
-    EntityTypes: exports.EntityTypes,
-};

@@ -132,4 +132,3 @@ export const getComponentsForType = (variableType) => {
     return VARIABLE_TYPES[variableType].inputControls;
 };
 export const getVariableTypeColor = (variableType) => VARIABLE_TYPES[variableType].color;
-export default VARIABLE_TYPES;

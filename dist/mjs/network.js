@@ -1,11 +1,5 @@
 // Model properties
-const entityPrimaryKeyProperty = '_uid';
-const entityAttributesProperty = 'attributes';
-const edgeSourceProperty = 'from';
-const edgeTargetProperty = 'to';
-export default {
-    entityPrimaryKeyProperty,
-    entityAttributesProperty,
-    edgeSourceProperty,
-    edgeTargetProperty,
-};
+export const entityPrimaryKeyProperty = '_uid';
+export const entityAttributesProperty = 'attributes';
+export const edgeSourceProperty = 'from';
+export const edgeTargetProperty = 'to';

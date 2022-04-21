@@ -89,18 +89,3 @@ export const BooleanChoice = {
   // image: BooleanChoiceImage,
 };
 
-export default {
-  TextInput,
-  TextArea,
-  NumberInput,
-  CheckboxGroup,
-  Toggle,
-  RadioGroup,
-  ToggleButtonGroup,
-  LikertScale,
-  VisualAnalogScale,
-  DatePicker,
-  RelativeDatePicker,
-  BooleanChoice,
-}
-

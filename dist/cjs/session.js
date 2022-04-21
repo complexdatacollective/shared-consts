@@ -1,21 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.codebookHashProperty = exports.sessionExportTimeProperty = exports.sessionFinishTimeProperty = exports.sessionStartTimeProperty = exports.protocolName = exports.protocolProperty = exports.sessionProperty = exports.caseProperty = void 0;
 // Session variable properties
-const caseProperty = 'caseId';
-const sessionProperty = 'sessionId';
-const protocolProperty = 'protocolUID';
-const protocolName = 'protocolName';
-const sessionStartTimeProperty = 'sessionStart';
-const sessionFinishTimeProperty = 'sessionFinish';
-const sessionExportTimeProperty = 'sessionExported';
-const codebookHashProperty = 'codebookHash';
-exports.default = {
-    caseProperty,
-    sessionProperty,
-    protocolProperty,
-    protocolName,
-    sessionStartTimeProperty,
-    sessionFinishTimeProperty,
-    sessionExportTimeProperty,
-    codebookHashProperty,
-};
+exports.caseProperty = 'caseId';
+exports.sessionProperty = 'sessionId';
+exports.protocolProperty = 'protocolUID';
+exports.protocolName = 'protocolName';
+exports.sessionStartTimeProperty = 'sessionStart';
+exports.sessionFinishTimeProperty = 'sessionFinish';
+exports.sessionExportTimeProperty = 'sessionExported';
+exports.codebookHashProperty = 'codebookHash';

@@ -1,16 +1,15 @@
-import assets from './assets';
-import network from './network';
-import exportProcess from './exportProcess';
-import network from './network';
-import protocol from './protocol';
-import session from './session';
-import stages from './stages';
-import variables from './variables/variables';
+import * as assets from './assets';
+import * as network from './network';
+import * as exportProcess from './exportProcess';
+import * as protocol from './protocol';
+import * as session from './session';
+import * as stages from './stages';
+import * as variables from './variables/variables';
 
 export default {
   ...assets,
-  ...exportProcess,
   ...network,
+  ...exportProcess,
   ...protocol,
   ...session,
   ...stages,
