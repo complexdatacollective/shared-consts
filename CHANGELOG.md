@@ -1,1 +1,0 @@
-## [0.0.1](https://github.com/codaco/shared-consts/compare/v1.2.0...v1.2.1) (2021-12-17)
