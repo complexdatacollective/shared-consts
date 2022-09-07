@@ -1,10 +1,10 @@
-export * from './variables.js';
+export * from './variables';
 export * from './controls';
 export * from './colors';
-export * from './export-process.js';
-export * from './network.js';
-export * from './assets.js';
-export * from './protocol.js';
-export * from './session.js';
-export * from './stages.js';
+export * from './export-process';
+export * from './network';
+export * from './assets';
+export * from './protocol';
+export * from './session';
+export * from './stages';
 
