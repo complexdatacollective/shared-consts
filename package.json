@@ -1,6 +1,6 @@
 {
   "name": "@codaco/shared-consts",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "Shared constants and typescript definitions for the Network Canvas project.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
