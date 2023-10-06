@@ -1,7 +1,23 @@
-// Docs: https://github.com/complexdatacollective/Network-Canvas/wiki/protocol.json#variable-registry
-export enum EntityTypes {
-  edge = 'edge',
-  node = 'node',
+import type { Codebook } from './codebook.js';
+import type { Stage } from './stages.js';
+
+export interface AssetDefinition {
+  source: string;
+  name: string;
+  type: 'network' | 'image' | 'audio' | 'video';
+  id?: string;
 }
 
-// Add TS definitions for entity types here, and ultimately the protocol json structure itself
+export interface AssetManifest {
+  [key: string]: AssetDefinition;
+}
+
+export interface Protocol {
+  name: string;
+  description?: string;
+  lastModified: string;
+  schemaVersion: number;
+  stages: Stage[];
+  codebook: Codebook;
+  assetManifest?: AssetManifest;
+}
